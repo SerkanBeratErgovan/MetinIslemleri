@@ -21,5 +21,19 @@ public class MetinIslemleriTest {
 		
 		assertEquals("Uctashoshosaf...",sonuc);
 	}
+	public void testBosluklariTemizle2() {
+		
+		//GIVEN * On Hazirliklar
+		String orjinalMetin ="Merhaba Arkadaslar";
+		
+		
+		//WHEN	* Asil Testi gerceklestir
+		
+		String sonuc = MetinIslemleri.bosluklariTemizle(orjinalMetin);
+		
+		//THEN * Kontroller
+		
+		assertEquals("MerhabaArkadaslar",sonuc);
+	}
 
 }
